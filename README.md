@@ -256,17 +256,18 @@ In the 'Outputs' section of the CloudFormation template created by the CDK, you'
 You can view the contents, and download data from that bucket sorted by the 'uuid' used for the workspace.  Example commands preceded by the `$` (use your bucket name!)
 
 ```bash
-$ aws s3 ls s3://ekscicdstorage-fsxlfilesystemfsxreplicationbucket-j161nywpxr1t/
+$ export BUCKET="ekscicdstorage-fsxlfilesystemfsxreplicationbucket-j161nywpxr1t"
+$ aws s3 ls s3://${BUCKET}/
                            PRE 2ee34c7e-eab4-4689-890e-467c08c78014/
                            PRE 513198c6-1630-44af-9b06-351b7e5f0a9d/
                            PRE 6614d346-baca-4c1b-a932-4d4b0604084e/
                            PRE daa7de23-a70a-4e7b-bcca-50dc3a028b1d/
                            PRE e3669a67-b5de-4b8b-87aa-a3de43aa8380/
-$ aws s3 ls s3://ekscicdstorage-fsxlfilesystemfsxreplicationbucket-j161nywpxr1t/2ee34c7e-eab4-4689-890e-467c08c78014/
+$ aws s3 ls s3://${BUCKET}/2ee34c7e-eab4-4689-890e-467c08c78014/
 2023-06-06 21:43:29          0 
 2023-06-06 21:55:31     400355 test-results.txt
-$ aws s3 cp s3://ekscicdstorage-fsxlfilesystemfsxreplicationbucket-j161nywpxr1t/2ee34c7e-eab4-4689-890e-467c08c78014/test-results.txt .
-download: s3://ekscicdstorage-fsxlfilesystemfsxreplicationbucket-j161nywpxr1t/2ee34c7e-eab4-4689-890e-467c08c78014/test-results.txt to ./test-results.txt
+$ aws s3 cp s3://${BUCKET}/2ee34c7e-eab4-4689-890e-467c08c78014/test-results.txt .
+download: s3://${BUCKET}/2ee34c7e-eab4-4689-890e-467c08c78014/test-results.txt to ./test-results.txt
 $ tail -n 10 test-results.txt 
 @aws-accelerator/installer:  solutions-helper.ts       |     100 |      100 |     100 |     100 |                   
 @aws-accelerator/installer:  validate.ts               |     100 |      100 |     100 |     100 |                   
