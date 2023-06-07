@@ -157,9 +157,9 @@ Then sign in using the `admin` user and the credential output above.
 
 # Benchmarks
 
-For those interested the code and manifests underpinning each benchmark is in the `benchmarks` folder.
+For those interested - the code and manifests underpinning each benchmark is in the `benchmarks` folder.
 
-Within, Grafana you will see a preloaded Dashboard that will show you the pod execution times for each style of build / test.
+Grafana has a preloaded Dashboard showing you pod execution times for each style of build / test.
 
 It's named 'Pod Run Times' and it's located in the 'examples' folder.  Scroll within the dashboard to see the results of each benchmark.
 
@@ -167,7 +167,7 @@ It's named 'Pod Run Times' and it's located in the 'examples' folder.  Scroll wi
 
 Each benchmark supports a number argument up to 30.  This is the number of pods to submit in parallel for that benchmark.
 
-If no argument is specified it will create one.
+If no argument is specified it will create one pod for a baseline.
 
 ```bash
 export RUN_PODS=5
