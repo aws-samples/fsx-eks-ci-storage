@@ -1,11 +1,19 @@
 # Overview
 
-This repository contains code to support this blog {TODO Link}.  
+This repository contains code to support this blog {TODO Link}.  You should start by reading the blog to understand the context!
 
-To support our benchmarks, our CDK project will create:
+You can reproduce the results discussed in the blog, and experiment with your own configurations to find the right solution for your use-case.
+
+## Deployed Resources
+
+Note, these resources are beyond the free tier!  Recommend reviewing the settings and assuring you understand the costs before deploying.  
+
+When you're experiments are finished, you can destroy the stack easily using the CDK!
+
+To support our benchmarks, this CDK project will create:
 - An EKS Cluster
-- An EC2 instance worker node
-- An FSxL filesystem
+- An EC2 instance worker node (you can optionally choose the type and quantity)
+- An FSxL filesystem (you can optionally configure the throughput and size)
 - An S3 bucket
 - All the required IRSA roles and permissions to function.
 - Supporting helm charts:
