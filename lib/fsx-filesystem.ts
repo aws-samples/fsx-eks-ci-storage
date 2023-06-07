@@ -25,7 +25,7 @@ export class FsxLFilesystem extends Construct {
         this.props = props
 
         this.fsxReplicationBucket = new s3.Bucket(this, "fsxReplicationBucket", {
-            removalPolicy: RemovalPolicy.DESTROY
+            removalPolicy: RemovalPolicy.RETAIN
         })
 
         this.fsxSecurityGroup = new ec2.SecurityGroup(this, 'fsxFilesystemSecurityGroup', {

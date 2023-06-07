@@ -24,7 +24,7 @@ export class EksCiCdStorageStack extends cdk.Stack {
 
         // Bucket for Direct To S3 Testing with permissions attached to the node-group.
         const directToS3Bucket = new s3.Bucket(this, "directToS3Bucket", {
-            removalPolicy: RemovalPolicy.DESTROY
+            removalPolicy: RemovalPolicy.RETAIN
         })
         cluster.nodeGroup.role.attachInlinePolicy(new iam.Policy(this, 'directToS3Permissions', {
             policyName: 'directToS3Permissions',
