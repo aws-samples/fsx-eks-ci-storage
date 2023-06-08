@@ -1,6 +1,8 @@
 # Overview
 
-This repository contains code to support this blog {TODO Link}.  You should start by reading the blog to understand the context!
+This repository contains code to support this blog [https://aws.amazon.com/blogs/storage/choosing-the-right-storage-for-cloud-native-ci-cd-on-amazon-elastic-kubernetes-service-eks/](https://aws.amazon.com/blogs/storage/choosing-the-right-storage-for-cloud-native-ci-cd-on-amazon-elastic-kubernetes-service-eks/).  
+
+You should start by reading the blog to understand the context!
 
 You can reproduce the results discussed in the blog, and experiment with your own configurations to find the right solution for your use-case.
 
