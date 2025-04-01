@@ -28,7 +28,7 @@
     "@aws-cdk/lambda-layer-kubectl-v26": "^2.0.0",
     "@kubernetes/client-node":"^0.18.1",
     "uuid": "^9.0.0",
-    "aws-cdk-lib": "2.82.0",
+    "aws-cdk-lib": "2.186.0",
     "constructs": "^10.0.0",
     "source-map-support": "^0.5.21",
     "minipass": "^4.2.1"
